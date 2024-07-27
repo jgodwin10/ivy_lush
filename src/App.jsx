@@ -34,14 +34,14 @@ const App = () => {
         alt=""
       />
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className=" max-w-[1344px] mx-auto text-center space-y-[9px] z-[9999] px-4 lg:px-0 text-white h-full flex justify-center items-center flex-col">
-          <h2 className="lg:text-[40px] md:text-[28px] text-[20px] uppercase">
+        <div className=" max-w-[1044px] mx-auto text-center space-y-[9px] z-[999999] px-4 text-white h-full flex justify-center items-center flex-col">
+          <h2 className=" md:text-[2.5vw] text-[18px] uppercase">
             we are opening soon..
           </h2>
-          <h1 className="lg:text-[100px] md:text-[40px] text-[28px] lg:leading-[100px] uppercase">
+          <h1 className="md:text-[4.5vw] text-[24px] lg:leading-[100px] uppercase">
             Your New Luxury Destination
           </h1>
-          <p className="lg:text-[28px] md:text-[18px] text-[14px] lg:leading-[45px]">
+          <p className="lg:text-[23px] md:text-[18px] text-[14px] lg:leading-[35px]">
             Experience unparalleled elegance and comfort at IVY LUSH Hotel,
             opening soon. our hotel offers exquisite rooms, world-class
             amenities, and exceptional service. Be among the first to discover a
