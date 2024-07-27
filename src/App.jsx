@@ -19,7 +19,7 @@ const App = () => {
       } else {
         setImage(image + 1);
       }
-    }, 3000);
+    }, 1000);
     return () => clearTimeout(timer);
   }, [image]);
 
@@ -84,7 +84,7 @@ const App = () => {
         </div>
       </div>
       <p className="absolute bottom-4 text-center w-full text-white md:text-[15px] text-[13px]">
-        &copy; 2024 Jefferson Hospitality. All rights reserved
+        &copy; 2024 Ivy Lush Hotel. All rights reserved
       </p>
     </div>
   );
