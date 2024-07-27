@@ -1,10 +1,8 @@
-import { useState } from "react";
-import React from "react";
-import Img from "../public/hero.jpeg";
-import Img1 from "../public/hero1.jpeg";
-import Img2 from "../public/hero2.jpeg";
-import Img3 from "../public/hero3.jpeg";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Img from "../src/Images/hero.jpeg";
+import Img1 from "../src/Images/hero1.jpeg";
+import Img2 from "../src/Images/hero2.jpeg";
+import Img3 from "../src/Images/hero3.jpeg";
 
 const App = () => {
   // bg-cover bg-[image:var(--image-url)]
@@ -12,7 +10,15 @@ const App = () => {
 
   const Images = [Img, Img1, Img2, Img3];
 
+  // const Images = [
+  //   "/../src/Images/hero.jpeg",
+  //   "/../src/Images/hero1.jpeg",
+  //   "/../src/Images/hero2.jpeg",
+  //   "/../src/Images/hero3.jpeg",
+  // ];
+
   useEffect(() => {
+    const mage = [Img, Img1, Img2, Img3];
     const timer = setTimeout(() => {
       if (image == 3) {
         setImage(0);
@@ -22,6 +28,8 @@ const App = () => {
     }, 1000);
     return () => clearTimeout(timer);
   }, [image]);
+
+  console.log(Images[image]);
 
   return (
     <div
