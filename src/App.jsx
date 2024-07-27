@@ -19,7 +19,7 @@ const App = () => {
       } else {
         setImage(image + 1);
       }
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, [image]);
 
