@@ -29,18 +29,20 @@ const App = () => {
     return () => clearTimeout(timer);
   }, [image]);
 
-  console.log(Images[image]);
+  // console.log(Images[image]);
 
   return (
     <div
       // style={{ "--image-url": `url(${Img})` }}
       className="h-screen w-full before:absolute before:contents-[''] before:top-0 before:w-full before:h-full before:bg-[#00000066] relative"
     >
-      <img
-        className="h-screen w-full object-cover"
-        src={Images[image]}
-        alt=""
-      />
+      {Images[image] && (
+        <img
+          className="h-screen w-full object-cover"
+          src={Images[image]}
+          alt=""
+        />
+      )}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className=" max-w-[1044px] mx-auto text-center space-y-[9px] z-[999999] px-4 text-white h-full flex justify-center items-center flex-col">
           <h2 className=" md:text-[2.3vw] text-[17px] uppercase">
